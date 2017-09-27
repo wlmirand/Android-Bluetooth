@@ -62,7 +62,7 @@ public class BTClient extends Service {
         Log.d(TAG, "onCreate()");
         
         //obtem o device alvo
-        mServerDevice = getServerDevice();
+        mServerDevice = getServerDevice(SERVER_NAME);
 
         //inicia a Thread que ira fazer a comunicacao
         mClientThread = new ClientThread(this, mServerDevice);
